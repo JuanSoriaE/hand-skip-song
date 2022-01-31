@@ -16,9 +16,9 @@ def click():
         print('[-] Button not found.')
 
 def positionChange(width, x):
-    #If x starts before 20% and finishes after 70%
+    #If x starts before 30% and finishes after 70%
     global initialFlag
-    if x < width*0.2:
+    if x < width*0.3:
         initialFlag = True
     if x > width*0.7 and initialFlag == True:
         print('[+] Position changed!')
